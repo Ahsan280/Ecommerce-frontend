@@ -22,7 +22,7 @@ const Return = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ cart, orderId }),
+        // body: JSON.stringify({ cart, orderId }),
         credentials: "include",
       }
     )
