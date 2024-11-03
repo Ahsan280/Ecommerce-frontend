@@ -22,7 +22,7 @@ const Return = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        // body: JSON.stringify({ cart, orderId }),
+        body: JSON.stringify({ cart, orderId }),
         credentials: "include",
       }
     )
@@ -33,7 +33,7 @@ const Return = () => {
       });
   }, []);
 
-  if (status === "complete") {
+  if (status.toLowerCase() === "completed") {
     localStorage.removeItem("cart");
     return (
       <section id="success" className="pt-20 h-[70vh]">
