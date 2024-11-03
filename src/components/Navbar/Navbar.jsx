@@ -37,7 +37,7 @@ const Navbar = () => {
   const hover =
     "hover:text-black text-white py-1 px-2 hover:bg-white rounded-lg";
   return (
-    <nav className="bg-gradient-to-b from-purple-400 via-purple-600 to-purple-800 p-0.5 fixed w-full z-50">
+    <nav className="bg-gradient-to-b  from-purple-400 via-purple-600 to-purple-800 p-0.5 fixed w-full z-50">
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-white text-2xl font-bold flex gap-3">
           <img src={logo} className="h-10 rounded-xl" alt="Shoppers Logo" />

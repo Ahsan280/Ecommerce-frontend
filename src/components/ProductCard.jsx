@@ -12,7 +12,7 @@ const ProductCard = ({ product }) => {
         <p>{product.description.slice(0, 40)}....</p>
         <p>Price: {product.price}$</p>
         <Link
-          to={`product/${product._id}`}
+          to={`/product/${product._id}`}
           className="bg-gray-500 text-center hover:bg-gray-800 duration-500 w-full text-white font-bold py-2 px-4 rounded mt-5"
         >
           View Details
