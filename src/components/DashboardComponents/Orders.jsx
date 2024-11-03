@@ -23,7 +23,7 @@ const Orders = () => {
     );
   }
   return (
-    <div className="flex flex-col gap-5 h-[60vh]">
+    <div className="flex flex-col gap-5 ">
       {orders.map((order) => {
         return (
           <div className="bg-purple-500 rounded-md text-white p-5">
