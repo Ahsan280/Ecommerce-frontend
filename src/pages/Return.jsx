@@ -33,7 +33,7 @@ const Return = () => {
       });
   }, []);
 
-  if (status === "Completed") {
+  if (status === "complete") {
     localStorage.removeItem("cart");
     return (
       <section id="success" className="pt-20 h-[70vh]">
