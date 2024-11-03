@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-
+import Swal from "sweetalert2";
 export const fetchCart = createAsyncThunk(
   "fetchCart",
   async ({ cartId, userId, api }) => {
@@ -82,6 +82,13 @@ const CartSlice = createSlice({
         state.loading = false;
         state.cart = action.payload;
         state.error = null;
+        Swal.fire({
+          title: "Product added to cart!",
+          icon: "success",
+          showConfirmButton: false,
+          timer: 1500,
+          position: "top-right",
+        });
       })
       .addCase(decrementFromCart.pending, (state) => {
         state.loading = true;
