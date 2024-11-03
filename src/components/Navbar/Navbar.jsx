@@ -129,7 +129,7 @@ const Navbar = () => {
               </Link>
             </>
           )}
-          <Search />
+          {/* <Search /> */}
         </div>
         {user ? (
           <Link to="/dashboard" className="text-white">
@@ -219,7 +219,7 @@ const Navbar = () => {
               <Link className="text-white">Sign Up</Link>
             </div>
           )}
-          <Search />
+          {/* <Search /> */}
         </div>
       )}
     </nav>
