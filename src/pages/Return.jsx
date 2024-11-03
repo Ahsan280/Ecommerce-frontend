@@ -16,7 +16,7 @@ const Return = () => {
     const sessionId = urlParams.get("session_id");
 
     fetch(
-      `https://ecommerce-backend-v9ku.onrender.com/v1/payment/session-status/?session_id=${sessionId}`,
+      `https://ecommerce-backend-v9ku.onrender.com/api/v1/payment/session-status/?session_id=${sessionId}`,
       {
         method: "GET",
         headers: {
