@@ -33,7 +33,7 @@ const Return = () => {
       });
   }, []);
 
-  if (status.toLowerCase() === "completed") {
+  if (status === "Completed") {
     localStorage.removeItem("cart");
     return (
       <section id="success" className="pt-20 h-[70vh]">
